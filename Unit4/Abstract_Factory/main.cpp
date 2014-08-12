@@ -17,6 +17,9 @@ int main()
 //	pizza = chicagoStore->orderPizza("cheese");
 //	cout << "Joel ordered a " << pizza->getName() << endl << endl;
 
+    delete nyStore;
+    delete pizza;
+
 	return 0;
 }
 

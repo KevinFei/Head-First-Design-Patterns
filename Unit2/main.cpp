@@ -26,6 +26,11 @@ int main()
 	weatherData->setMeasurements(78, 90, 29.2f);
 	cout << endl;
 
+    delete weatherData;
+    delete currentDisplay;
+    delete statisticsDisplay;
+    delete forecastDisplay;
+
 	return 0;
 }
 

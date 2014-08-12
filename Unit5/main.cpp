@@ -10,6 +10,8 @@ int main()
 	chocolateboiler->fill();
 	chocolateboiler->boil();
 	chocolateboiler->drain();
+    
+    delete chocolateboiler;
 
 	return 0;
 }

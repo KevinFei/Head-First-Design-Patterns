@@ -1,7 +1,8 @@
 #ifndef __TURKEYADAPTER_H__
 #define __TURKEYADAPTER_H__
 
-class Duck;
+#include "Duck.h"
+
 class Turkey;
 
 class TurkeyAdapter: public Duck

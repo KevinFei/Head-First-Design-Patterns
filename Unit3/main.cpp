@@ -26,6 +26,10 @@ int main()
 	cout << beverage3->getDescription()
 		<< " $" << beverage3->cost() << endl;
 
+    delete beverage;
+    delete beverage2;
+    delete beverage3;
+
 	return 0;
 }
 

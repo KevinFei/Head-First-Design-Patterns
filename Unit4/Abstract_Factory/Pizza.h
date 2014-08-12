@@ -27,6 +27,7 @@ protected:
 	Clams *clam;
 
 public:
+    virtual ~Pizza(){}
 	virtual void prepare() = 0;
 	void bake();
 	virtual void cut();

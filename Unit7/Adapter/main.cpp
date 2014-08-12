@@ -28,6 +28,10 @@ int main()
 	cout << "\nThe TurkeyAdapter says..." << endl;
 	testDuck(turkeyAdapter);
 
+    delete duck;
+    delete turkey;
+    delete turkeyAdapter;
+
 	return 0;
 }
 

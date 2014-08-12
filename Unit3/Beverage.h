@@ -12,6 +12,7 @@ protected:
 
 public:
 	Beverage();
+    virtual ~Beverage(){}
 	virtual string getDescription();
 	virtual double cost() = 0;
 };

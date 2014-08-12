@@ -10,6 +10,7 @@ class Pizza;
 class PizzaStore
 {
 public:
+    virtual ~PizzaStore(){}
 	Pizza* orderPizza(const string &type);
 
 protected:

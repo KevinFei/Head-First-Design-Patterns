@@ -8,6 +8,7 @@ using namespace std;
 class CaffeineBeverageWithHook
 {
 public:
+    virtual ~CaffeineBeverageWithHook(){}
 	void prepareRecipe();
 	virtual void brew() = 0;
 	virtual void addCondiments() = 0;

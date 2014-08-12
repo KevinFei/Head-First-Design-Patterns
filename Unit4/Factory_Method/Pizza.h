@@ -15,6 +15,7 @@ protected:
 	vector<string> toppings;
 
 public:
+    virtual ~Pizza(){}
 	void prepare();
 	void bake();
 	virtual void cut();

@@ -14,8 +14,14 @@ int main()
 	Pizza *pizza = nyStore->orderPizza("cheese");
 	cout << "Ethan ordered a " << pizza->getName() << endl << endl;
 
+    delete pizza;
+
 	pizza = chicagoStore->orderPizza("cheese");
 	cout << "Joel ordered a " << pizza->getName() << endl << endl;
+
+    delete nyStore;
+    delete chicagoStore;
+    delete pizza;
 
 	return 0;
 }

@@ -25,6 +25,12 @@ int main()
 	remoteControl->onButtonWasPushed(1);
 	remoteControl->undoButtonWasPushed();
 
+    delete remoteControl;
+    delete ceilingFan;
+    delete ceilingFanMedium;
+    delete ceilingFanHigh;
+    delete ceilingFanOff;
+
 	return 0;
 }
 

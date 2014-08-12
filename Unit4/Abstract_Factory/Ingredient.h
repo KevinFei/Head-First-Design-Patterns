@@ -10,150 +10,98 @@ class Ingredient
 protected:
 	string name;
 	virtual void printName() = 0;
+public:
+    virtual ~Ingredient(){}
 };
 
 class Dough: public Ingredient
 {
 protected:
-	void printName()	
-	{
-		cout << " I am " << name << " in Dough." << endl;
-	}
+	void printName();	
 };
 
 class ThinCrustDough: public Dough
 {
 public:
-	ThinCrustDough()
-	{
-		name = "ThinCrustDough";
-		printName();
-	}
+	ThinCrustDough();
 };
 
 class Sauce: public Ingredient
 {
 protected:
-	void printName()	
-	{
-		cout << " I am " << name << " in Sauce." << endl;
-	}
+	void printName();	
 };
 
 class MarinaraSauce: public Sauce
 {
 public:
-	MarinaraSauce()
-	{
-		name = "MarinaraSauce";
-		printName();
-	}
+	MarinaraSauce();
 };
 
 class Cheese: public Ingredient
 {
 protected:
-	void printName()	
-	{
-		cout << " I am " << name << " in Cheese." << endl;
-	}
+	void printName();
 };
 
 class ReggianoCheese: public Cheese
 {
 public:
-	ReggianoCheese()
-	{
-		name = "ReggianoCheese";
-		printName();
-	}
+	ReggianoCheese();
 };
 
 class Veggies: public Ingredient
 {
 protected:
-	void printName()	
-	{
-		cout << " I am " << name << " in Veggies." << endl;
-	}
+	void printName();
 };
 
 class Garlic: public Veggies
 {
 public:
-	Garlic()
-	{
-		name = "Garlic";
-		printName();
-	}
+	Garlic();
 };
 
 class Onion: public Veggies
 {
 public:
-	Onion()
-	{
-		name = "Onion";
-		printName();
-	}
+	Onion();
 };
 
 class Mushroom: public Veggies
 {
 public:
-	Mushroom()
-	{
-		name = "Mushroom";
-		printName();
-	}
+	Mushroom();
 };
 
 class RedPepper: public Veggies
 {
 public:
-	RedPepper()
-	{
-		name = "RedPepper";
-		printName();
-	}
+	RedPepper();
 };
 
 class Pepperoni: public Ingredient
 {
 protected:
-	void printName()	
-	{
-		cout << " I am " << name << " in Pepperoni." << endl;
-	}
+	void printName();
 };
 
 class SlicedPepperoni: public Pepperoni
 {
 public:
-	SlicedPepperoni()
-	{
-		name = "SlicedPepperoni";
-		printName();
-	}
+	SlicedPepperoni();
 };
 
 class Clams: public Ingredient
 {
 protected:
-	void printName()	
-	{
-		cout << " I am " << name << " in Clam." << endl;
-	}
+	void printName();
 };
 
 class FreshClams: public Clams
 {
 public:
-	FreshClams()
-	{
-		name = "FreshClams";
-		printName();
-	}
+	FreshClams();
 };
 
 #endif

@@ -6,6 +6,7 @@ class Subject;
 class DisplayElement
 {
 public:
+    virtual ~DisplayElement(){}
 	virtual void display() = 0;
 };
 

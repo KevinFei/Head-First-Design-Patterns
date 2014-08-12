@@ -3,9 +3,9 @@
 
 #include <string>
 
-using namespace std;
+#include "Beverage.h"
 
-class Beverage;
+using namespace std;
 
 class CondimentDecorator: public Beverage
 {
@@ -13,6 +13,7 @@ protected:
 	Beverage *beverage;
 
 public:
+    virtual ~CondimentDecorator(){}
 	virtual string getDescription() = 0;
 };
 
