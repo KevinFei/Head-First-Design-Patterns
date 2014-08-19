@@ -7,59 +7,59 @@ class Command
 {
 public:
     virtual ~Command(){}
-	virtual void execute() = 0;
-	virtual void undo() = 0;
+    virtual void execute() = 0;
+    virtual void undo() = 0;
 };
 
 class NoCommand: public Command
 {
 public:
-	void execute(){}
-	void undo(){}
+    void execute(){}
+    void undo(){}
 };
 
 class CeilingFanHighCommand: public Command
 {
-	CeilingFan *ceilingFan;
-	int prevSpeed;
+    CeilingFan *ceilingFan;
+    int prevSpeed;
 
 public:
-	CeilingFanHighCommand(CeilingFan *ceilingFan);
-	void execute();
-	void undo();
+    CeilingFanHighCommand(CeilingFan *ceilingFan);
+    void execute();
+    void undo();
 };
 
 class CeilingFanMediumCommand: public Command
 {
-	CeilingFan *ceilingFan;
-	int prevSpeed;
+    CeilingFan *ceilingFan;
+    int prevSpeed;
 
 public:
-	CeilingFanMediumCommand(CeilingFan *ceilingFan);
-	void execute();
-	void undo();
+    CeilingFanMediumCommand(CeilingFan *ceilingFan);
+    void execute();
+    void undo();
 };
 
 class CeilingFanLowCommand: public Command
 {
-	CeilingFan *ceilingFan;
-	int prevSpeed;
+    CeilingFan *ceilingFan;
+    int prevSpeed;
 
 public:
-	CeilingFanLowCommand(CeilingFan *ceilingFan);
-	void execute();
-	void undo();
+    CeilingFanLowCommand(CeilingFan *ceilingFan);
+    void execute();
+    void undo();
 };
 
 class CeilingFanOffCommand: public Command
 {
-	CeilingFan *ceilingFan;
-	int prevSpeed;
+    CeilingFan *ceilingFan;
+    int prevSpeed;
 
 public:
-	CeilingFanOffCommand(CeilingFan *ceilingFan);
-	void execute();
-	void undo();
+    CeilingFanOffCommand(CeilingFan *ceilingFan);
+    void execute();
+    void undo();
 };
 
 #endif

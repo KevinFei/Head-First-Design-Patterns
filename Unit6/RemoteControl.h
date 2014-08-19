@@ -6,16 +6,16 @@ class Command;
 class RemoteControlWithUndo
 {
 private:
-	Command **onCommands;
-	Command **offCommands;
-	Command *undoCommand;
+    Command **onCommands;
+    Command **offCommands;
+    Command *undoCommand;
 
 public:
-	RemoteControlWithUndo();
-	void setCommand(int slot, Command *onCommand, Command *offCommand);
-	void onButtonWasPushed(int slot);
-	void offButtonWasPushed(int slot);
-	void undoButtonWasPushed();
+    RemoteControlWithUndo();
+    void setCommand(int slot, Command *onCommand, Command *offCommand);
+    void onButtonWasPushed(int slot);
+    void offButtonWasPushed(int slot);
+    void undoButtonWasPushed();
 };
 
 #endif

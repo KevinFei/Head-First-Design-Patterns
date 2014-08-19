@@ -9,31 +9,31 @@ using namespace std;
 class Pizza
 {
 protected:
-	string name;
-	string dough;
-	string sauce;
-	vector<string> toppings;
+    string name;
+    string dough;
+    string sauce;
+    vector<string> toppings;
 
 public:
     virtual ~Pizza(){}
-	void prepare();
-	void bake();
-	virtual void cut();
-	void box();
-	string getName();
+    void prepare();
+    void bake();
+    virtual void cut();
+    void box();
+    string getName();
 };
 
 class NYStyleCheesePizza: public Pizza
 {
 public:
-	NYStyleCheesePizza();
+    NYStyleCheesePizza();
 };
 
 class ChicagoStyleCheesePizza: public Pizza
 {
 public:
-	ChicagoStyleCheesePizza();
-	void cut();
+    ChicagoStyleCheesePizza();
+    void cut();
 };
 
 #endif

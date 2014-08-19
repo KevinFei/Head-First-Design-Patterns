@@ -6,11 +6,11 @@ using namespace std;
 
 void MallardDuck::quack()
 {
-	cout << "Quack" << endl;
+    cout << "Quack" << endl;
 }
 
 void MallardDuck::fly()
 {
-	cout << "I'm flying" << endl;
+    cout << "I'm flying" << endl;
 }
 

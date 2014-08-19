@@ -4,37 +4,37 @@
 
 Dough* NYPizzaIngredientFactory::createDough()
 {
-	return new ThinCrustDough();
+    return new ThinCrustDough();
 }
 
 Sauce* NYPizzaIngredientFactory::createSauce()
 {
-	return new MarinaraSauce();
+    return new MarinaraSauce();
 }
 
 Cheese* NYPizzaIngredientFactory::createCheese()
 {
-	return new ReggianoCheese();
+    return new ReggianoCheese();
 }
 
 vector<Veggies*> NYPizzaIngredientFactory::createVeggies()
 {
-	vector<Veggies*> veggies;
-	veggies.push_back(new Garlic());
-	veggies.push_back(new Onion());
-	veggies.push_back(new Mushroom());
-	veggies.push_back(new RedPepper());
+    vector<Veggies*> veggies;
+    veggies.push_back(new Garlic());
+    veggies.push_back(new Onion());
+    veggies.push_back(new Mushroom());
+    veggies.push_back(new RedPepper());
 
-	return veggies;
+    return veggies;
 }
 
 Pepperoni* NYPizzaIngredientFactory::createPepperoni()
 {
-	return new SlicedPepperoni();
+    return new SlicedPepperoni();
 }
 
 Clams* NYPizzaIngredientFactory::createClam()
 {
-	return new FreshClams();
+    return new FreshClams();
 }
 

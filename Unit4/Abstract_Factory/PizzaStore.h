@@ -11,28 +11,28 @@ class PizzaStore
 {
 public:
     virtual ~PizzaStore(){}
-	Pizza* orderPizza(const string &type);
+    Pizza* orderPizza(const string &type);
 
 protected:
-	virtual Pizza* createPizza(const string &type) = 0;
+    virtual Pizza* createPizza(const string &type) = 0;
 };
 
 class NYPizzaStore: public PizzaStore
 {
 protected:
-	Pizza* createPizza(const string &type);
+    Pizza* createPizza(const string &type);
 };
 #if 0
 class ChicagoPizzaStore: public PizzaStore
 {
 protected:
-	Pizza* createPizza(const string &type);
+    Pizza* createPizza(const string &type);
 };
 
 class CaliforniaPizzaStore: public PizzaStore
 {
 protected:
-	Pizza* createPizza(const string &type);
+    Pizza* createPizza(const string &type);
 };
 #endif
 #endif

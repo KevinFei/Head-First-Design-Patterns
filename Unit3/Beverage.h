@@ -8,41 +8,41 @@ using namespace std;
 class Beverage
 {
 protected:
-	string description;
+    string description;
 
 public:
-	Beverage();
+    Beverage();
     virtual ~Beverage(){}
-	virtual string getDescription();
-	virtual double cost() = 0;
+    virtual string getDescription();
+    virtual double cost() = 0;
 };
 
 class Espresso: public Beverage
 {
 public:
-	Espresso();
-	double cost();
+    Espresso();
+    double cost();
 };
 
 class HouseBlend: public Beverage
 {
 public:
-	HouseBlend();
-	double cost();
+    HouseBlend();
+    double cost();
 };
 
 class DarkRoast: public Beverage
 {
 public:
-	DarkRoast();
-	double cost();
+    DarkRoast();
+    double cost();
 };
 
 class Decat: public Beverage
 {
 public:
-	Decat();
-	double cost();
+    Decat();
+    double cost();
 };
 
 #endif

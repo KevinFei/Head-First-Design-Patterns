@@ -8,8 +8,8 @@ using namespace std;
 class Ingredient
 {
 protected:
-	string name;
-	virtual void printName() = 0;
+    string name;
+    virtual void printName() = 0;
 public:
     virtual ~Ingredient(){}
 };
@@ -17,91 +17,91 @@ public:
 class Dough: public Ingredient
 {
 protected:
-	void printName();	
+    void printName();    
 };
 
 class ThinCrustDough: public Dough
 {
 public:
-	ThinCrustDough();
+    ThinCrustDough();
 };
 
 class Sauce: public Ingredient
 {
 protected:
-	void printName();	
+    void printName();    
 };
 
 class MarinaraSauce: public Sauce
 {
 public:
-	MarinaraSauce();
+    MarinaraSauce();
 };
 
 class Cheese: public Ingredient
 {
 protected:
-	void printName();
+    void printName();
 };
 
 class ReggianoCheese: public Cheese
 {
 public:
-	ReggianoCheese();
+    ReggianoCheese();
 };
 
 class Veggies: public Ingredient
 {
 protected:
-	void printName();
+    void printName();
 };
 
 class Garlic: public Veggies
 {
 public:
-	Garlic();
+    Garlic();
 };
 
 class Onion: public Veggies
 {
 public:
-	Onion();
+    Onion();
 };
 
 class Mushroom: public Veggies
 {
 public:
-	Mushroom();
+    Mushroom();
 };
 
 class RedPepper: public Veggies
 {
 public:
-	RedPepper();
+    RedPepper();
 };
 
 class Pepperoni: public Ingredient
 {
 protected:
-	void printName();
+    void printName();
 };
 
 class SlicedPepperoni: public Pepperoni
 {
 public:
-	SlicedPepperoni();
+    SlicedPepperoni();
 };
 
 class Clams: public Ingredient
 {
 protected:
-	void printName();
+    void printName();
 };
 
 class FreshClams: public Clams
 {
 public:
-	FreshClams();
+    FreshClams();
 };
 
 #endif

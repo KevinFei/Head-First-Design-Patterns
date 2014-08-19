@@ -9,34 +9,34 @@ class CaffeineBeverageWithHook
 {
 public:
     virtual ~CaffeineBeverageWithHook(){}
-	void prepareRecipe();
-	virtual void brew() = 0;
-	virtual void addCondiments() = 0;
-	void boilWater();
-	void pourInCup();
-	virtual bool customerWantsCondiments();
+    void prepareRecipe();
+    virtual void brew() = 0;
+    virtual void addCondiments() = 0;
+    void boilWater();
+    void pourInCup();
+    virtual bool customerWantsCondiments();
 };
 
 class CoffeeWithHook: public CaffeineBeverageWithHook
 {
 private:
-	string getUserInput();
+    string getUserInput();
 
 public:
-	void brew();
-	void addCondiments();
-	bool customerWantsCondiments();
+    void brew();
+    void addCondiments();
+    bool customerWantsCondiments();
 };
 
 class TeaWithHook: public CaffeineBeverageWithHook
 {
 private:
-	string getUserInput();
+    string getUserInput();
 
 public:
-	void brew();
-	void addCondiments();
-	bool customerWantsCondiments();
+    void brew();
+    void addCondiments();
+    bool customerWantsCondiments();
 };
 
 #endif

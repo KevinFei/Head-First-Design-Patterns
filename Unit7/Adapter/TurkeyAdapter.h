@@ -7,12 +7,12 @@ class Turkey;
 
 class TurkeyAdapter: public Duck
 {
-	Turkey *turkey;
+    Turkey *turkey;
 
 public:
-	TurkeyAdapter(Turkey *turkey);
-	void quack();
-	void fly();
+    TurkeyAdapter(Turkey *turkey);
+    void quack();
+    void fly();
 };
 
 #endif

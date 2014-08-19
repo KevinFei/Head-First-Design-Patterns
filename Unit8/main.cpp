@@ -6,18 +6,18 @@ using namespace std;
 
 int main()
 {
-	TeaWithHook *teaHook = new TeaWithHook();
-	CoffeeWithHook *coffeeHook = new CoffeeWithHook();
+    TeaWithHook *teaHook = new TeaWithHook();
+    CoffeeWithHook *coffeeHook = new CoffeeWithHook();
 
-	cout << "\nMaking tea..." << endl;
-	teaHook->prepareRecipe();
+    cout << "\nMaking tea..." << endl;
+    teaHook->prepareRecipe();
 
-	cout << "\nMaking coffee..." << endl;
-	coffeeHook->prepareRecipe();
+    cout << "\nMaking coffee..." << endl;
+    coffeeHook->prepareRecipe();
 
-	delete teaHook;
-	delete coffeeHook;
+    delete teaHook;
+    delete coffeeHook;
 
-	return 0;
+    return 0;
 }
 

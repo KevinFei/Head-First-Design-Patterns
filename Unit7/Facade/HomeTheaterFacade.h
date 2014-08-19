@@ -18,27 +18,27 @@ class PopcornPopper;
 
 class HomeTheaterFacade
 {
-	Amplifier *amp;
-	Tuner *tuner;
-	DvdPlayer *dvd;
-	CdPlayer *cd;
-	Projector *projector;
-	TheaterLights *lights;
-	Screen *screen;
-	PopcornPopper *popper;
+    Amplifier *amp;
+    Tuner *tuner;
+    DvdPlayer *dvd;
+    CdPlayer *cd;
+    Projector *projector;
+    TheaterLights *lights;
+    Screen *screen;
+    PopcornPopper *popper;
 
 public:
-	HomeTheaterFacade(Amplifier *amp,
-			Tuner *tuner,
-			DvdPlayer *dvd,
-			CdPlayer *cd,
-			Projector *projector,
-			TheaterLights *lights,
-			Screen *screen,
-			PopcornPopper *popper);
+    HomeTheaterFacade(Amplifier *amp,
+            Tuner *tuner,
+            DvdPlayer *dvd,
+            CdPlayer *cd,
+            Projector *projector,
+            TheaterLights *lights,
+            Screen *screen,
+            PopcornPopper *popper);
 
-	void watchMovie(string movie);
-	void endMovie();
+    void watchMovie(string movie);
+    void endMovie();
 };
 
 #endif

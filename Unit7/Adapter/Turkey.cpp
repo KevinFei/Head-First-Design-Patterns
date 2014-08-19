@@ -6,11 +6,11 @@ using namespace std;
 
 void WildTurkey::gobble()
 {
-	cout << "Gobble gobble" << endl;
+    cout << "Gobble gobble" << endl;
 }
 
 void WildTurkey::fly()
 {
-	cout << "I'm flying a short distance" << endl;
+    cout << "I'm flying a short distance" << endl;
 }
 

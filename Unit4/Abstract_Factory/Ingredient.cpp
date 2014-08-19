@@ -11,7 +11,7 @@ ThinCrustDough::ThinCrustDough()
     printName();
 }
 
-void Sauce::printName()	
+void Sauce::printName()    
 {
     cout << " I am " << name << " in Sauce." << endl;
 }
@@ -22,7 +22,7 @@ MarinaraSauce::MarinaraSauce()
     printName();
 }
 
-void Cheese::printName()	
+void Cheese::printName()    
 {
     cout << " I am " << name << " in Cheese." << endl;
 }
@@ -33,7 +33,7 @@ ReggianoCheese::ReggianoCheese()
     printName();
 }
 
-void Veggies::printName()	
+void Veggies::printName()    
 {
     cout << " I am " << name << " in Veggies." << endl;
 }
@@ -62,7 +62,7 @@ RedPepper::RedPepper()
     printName();
 }
 
-void Pepperoni::printName()	
+void Pepperoni::printName()    
 {
     cout << " I am " << name << " in Pepperoni." << endl;
 }
@@ -73,7 +73,7 @@ SlicedPepperoni::SlicedPepperoni()
     printName();
 }
 
-void Clams::printName()	
+void Clams::printName()    
 {
     cout << " I am " << name << " in Clam." << endl;
 }

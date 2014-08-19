@@ -8,21 +8,21 @@ using namespace std;
 
 int main()
 {
-	PizzaStore *nyStore = new NYPizzaStore();
-	PizzaStore *chicagoStore = new ChicagoPizzaStore();
+    PizzaStore *nyStore = new NYPizzaStore();
+    PizzaStore *chicagoStore = new ChicagoPizzaStore();
 
-	Pizza *pizza = nyStore->orderPizza("cheese");
-	cout << "Ethan ordered a " << pizza->getName() << endl << endl;
+    Pizza *pizza = nyStore->orderPizza("cheese");
+    cout << "Ethan ordered a " << pizza->getName() << endl << endl;
 
     delete pizza;
 
-	pizza = chicagoStore->orderPizza("cheese");
-	cout << "Joel ordered a " << pizza->getName() << endl << endl;
+    pizza = chicagoStore->orderPizza("cheese");
+    cout << "Joel ordered a " << pizza->getName() << endl << endl;
 
     delete nyStore;
     delete chicagoStore;
     delete pizza;
 
-	return 0;
+    return 0;
 }
 

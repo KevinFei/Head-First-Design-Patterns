@@ -17,37 +17,37 @@ class Clams;
 class Pizza
 {
 protected:
-	PizzaIngredientFactory *ingredientFactory;
-	string name;
-	Dough *dough;
-	Sauce *sauce;
-	vector<Veggies*> veggies;
-	Cheese *cheese;
-	Pepperoni *pepperoni;
-	Clams *clam;
+    PizzaIngredientFactory *ingredientFactory;
+    string name;
+    Dough *dough;
+    Sauce *sauce;
+    vector<Veggies*> veggies;
+    Cheese *cheese;
+    Pepperoni *pepperoni;
+    Clams *clam;
 
 public:
     virtual ~Pizza(){}
-	virtual void prepare() = 0;
-	void bake();
-	virtual void cut();
-	void box();
-	void setName(const string& name);
-	string getName();
+    virtual void prepare() = 0;
+    void bake();
+    virtual void cut();
+    void box();
+    void setName(const string& name);
+    string getName();
 };
 
 class CheesePizza: public Pizza
 {
 public:
-	CheesePizza(PizzaIngredientFactory *ingredientFactory);
-	void prepare();
+    CheesePizza(PizzaIngredientFactory *ingredientFactory);
+    void prepare();
 };
 
 class ClamPizza: public Pizza
 {
 public:
-	ClamPizza(PizzaIngredientFactory *ingredientFactory);
-	void prepare();
+    ClamPizza(PizzaIngredientFactory *ingredientFactory);
+    void prepare();
 };
 
 #endif
